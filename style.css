@@ -255,14 +255,12 @@ html, body {
     text-decoration: none;
 }
 
-/* -------------------
-    MEDIA QUERIES
---------------------- */
+
 
 @media only screen and (max-width: 768px) {
     #nav {
         padding: 15px 20px;
-        flex-direction: column;
+        display: flex;
         gap: 10px;
     }
 
