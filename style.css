@@ -1,48 +1,48 @@
-*{
+* {
     margin: 0;
     padding: 0;
-    font-family: "General Sans"; /* Star ke andar likha taki sab pr apply ho jaye*/
+    font-family: "General Sans";
     box-sizing: border-box;
 }
 
-html,body{
+html, body {
     width: 100%;
     height: 100%;
 }
 
-#minicircle{
+#minicircle {
     transition: all cubic-bezier(0.19, 1, 0.22, 1) 1s;
     width: 10px;
-    height:10px;
+    height: 10px;
     position: absolute;
     z-index: 99999;
     border-radius: 50%;
     background-color: white;
 }
 
-.bounding{
+.bounding {
     width: fit-content;
     overflow: hidden;
 }
 
-.bounding .boundingelem{
+.bounding .boundingelem {
     transform: translateY(100%);
 }
 
-#main{
+#main {
     width: 100%;
-    background-color: black;/*is se jahan jahan div change ho rha h uske vajha se ek ajeb se line dhekte h vo nhi dhekege*/
-}
-
-#hero{
-    position: relative;
-    color: #fff;
-    width: 100%;
-    height: 100vh; /*vh ka matlab h jitna screen ka height ho utna*/
     background-color: black;
 }
 
-#nav{
+#hero {
+    position: relative;
+    color: #fff;
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+}
+
+#nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -51,81 +51,79 @@ html,body{
     color: #fff;
 }
 
-#nav a{
-    text-decoration: none; /*UnderLine hat jayige text ke niche se*/
+#nav a {
+    text-decoration: none;
     font-size: 18px;
     color: #fff;
 }
 
-#heading{
-    margin-top: 90px; /* px mein de kyuki header or text ke beech distance change nahi ho rha as Screen size changes agar change hota to vw,vh,% ye sab ke terms mein dena hota*/
-
+#heading {
+    margin-top: 90px;
 }
 
-#heading h1{
+#heading h1 {
     margin-left: 30px;
     opacity: 0.6;
-    line-height: 1; /*Just ke text extra line lena band karde*/
-    font-size: 9vw; /* vw ka fayada hota h agar screen bade hoge to size bhi basically wrt to screen size h ye*/
+    line-height: 1;
+    font-size: 9vw;
     text-transform: uppercase;
     font-weight: 900;
 }
 
-#heading #Secondh1{
-    margin-left: 230px;
+#heading #Secondh1 {
+    margin-left: 150px;
 }
 
-.blocktext{
+.blocktext {
     display: flex;
     flex-direction: column;
     align-items: end;
-    width: fit-content;/*ye isiliye kiya taki colour etc. jo bhi apply karein vo utne he area mein jitne mein hamara object h*/
-    /* background-color: red; */
+    width: fit-content;
 }
 
-.blocktext h5{
+.blocktext h5 {
     text-transform: uppercase;
     font-size: 15px;
     text-align: right;
 }
 
-#chhotiheadings{
+#chhotiheadings {
     margin-top: 100px;
-    padding-right: 50px;
+    padding-right: 10px;
     display: flex;
     flex-direction: column;
     align-items: end;
 }
 
-#chhotiheadings h5{
+#chhotiheadings h5 {
     text-transform: uppercase;
     margin-top: .5vw;
     font-size: 1.5vw;
     text-align: right;
 }
 
-#herofooter{
+#herofooter {
     padding: 0 2vw;
     width: 100%;
     position: absolute;
     bottom: 3%;
     display: flex;
-    align-items: centre;
+    align-items: center;
     justify-content: space-between;
 }
 
-#herofooter a{
+#herofooter a {
     color: #fff;
     text-transform: uppercase;
     text-decoration: none;
 }
 
-#herofooter #iconset{
+#herofooter #iconset {
     display: flex;
     gap: 10px;
 }
 
-#herofooter .circle{
+#herofooter .circle {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -135,17 +133,16 @@ html,body{
     background-color: #888;
 }
 
-
-#second{
+#second {
     color: #fff;
     padding-top: 50px;
-    padding-right: 10vw; /*Second page ke jo differentiating line ke usko chota karne ke liye */
+    padding-right: 10vw;
     background-color: black;
     width: 100%;
-    height:fit-content; /*Video mein ye 100vh tha but mene fit-content se change kiya h*/
+    height: fit-content;
 }
 
-.elem{
+.elem {
     position: relative;
     display: flex;
     align-items: center;
@@ -156,23 +153,15 @@ html,body{
     border-top: 1px solid #888;
 }
 
-.elem h1{
+.elem h1 {
     text-transform: uppercase;
     font-size: 7.6vw;
     opacity: 0.6;
 }
 
-.elemlast{
+.elemlast {
     border-bottom: 1px solid #888;
 }
-
-/* .elem img{ */
-    /* display: none; Images h but dhekenge nahi */
-    /* opacity: 0; */
-    /* height: 140%; */
-    /* z-index: 999; z-index itna taki images top pr aye */
-    /* position: absolute; */
-/* } */
 
 .elem img {
     opacity: 0;
@@ -183,41 +172,39 @@ html,body{
     transition: opacity 0.3s ease;
 }
 
-
-#about{
+#about {
     display: flex;
     align-items: center;
-    /* justify-content: space-between; */
-    gap: 50px;
-    color: #fff;
-    padding: 10vw 10vw;
-    padding-left: 10vw;
-    background-color:black;
+    justify-content: space-between;
+    gap: 20px;
+    color: #ffffff;
+    padding: 10vw;
+    background-color: rgb(255, 0, 0);
     width: 100%;
+    flex-wrap: wrap;
 }
 
-#textabout{
+#textabout {
     width: 25rem;
-    /* background-color: red; */
 }
 
-#textabout h5{
+#textabout h5 {
     text-transform: uppercase;
     opacity: 0.6;
     margin-bottom: 10px;
 }
 
-#textabout p{
+#textabout p {
     line-height: 1.7;
     margin-bottom: 10px;
 }
 
-#about img{
+#about img {
     width: 200px;
-    margin-left: 20%; 
+    margin-left: 10vw;
 }
 
-#textabout a{
+#textabout a {
     padding: 12px 22px;
     border: 1px solid #fff;
     border-radius: 100px;
@@ -226,52 +213,118 @@ html,body{
     text-decoration: none;
 }
 
-#subscribe{
+#subscribe {
     color: #fff;
     background-color: black;
     padding: 20px 30px;
     padding-bottom: 7vw;
 }
 
-#subscribe h5{
+#subscribe h5 {
     text-transform: uppercase;
     opacity: 0.6;
 }
 
-#subscribe h3{
+#subscribe h3 {
     text-transform: uppercase;
     font-size: 14px;
     margin-top: 10px;
 }
 
-#footer{
+#footer {
     background-color: black;
     color: white;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 20px, 30px;
+    padding: 20px 30px;
+    flex-wrap: wrap;
 }
 
-#footerleft{
+#footerleft, #footerRight {
     display: flex;
     gap: 20px;
+    flex-wrap: wrap;
 }
 
-#footerRight{
-    display: flex;
-    gap: 30px;
-}
-
-#footer a{
+#footer a {
     color: white;
     text-transform: uppercase;
     font-size: 14px;
     font-weight: 500;
-    color: #fff;
     text-decoration: none;
 }
 
+/* -------------------
+    MEDIA QUERIES
+--------------------- */
 
+@media only screen and (max-width: 768px) {
+    #nav {
+        padding: 15px 20px;
+        flex-direction: column;
+        gap: 10px;
+    }
 
+    #heading {
+        margin-top: 60px;
+    }
 
+    #heading h1 {
+        font-size: 12vw;
+        margin-left: 10px;
+    }
+
+    #heading #Secondh1 {
+        margin-left: 20px;
+    }
+
+    .blocktext h5 {
+        font-size: 12px;
+    }
+
+    #chhotiheadings {
+        padding-right: 20px;
+    }
+
+    #chhotiheadings h5 {
+        font-size: 3.5vw;
+    }
+
+    #herofooter {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .elem {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 6vw 4vw;
+        gap: 10px;
+    }
+
+    .elem h1 {
+        font-size: 9vw;
+    }
+
+    #about {
+        flex-direction: column;
+        text-align: center;
+        padding: 10vw 5vw;
+    }
+
+    #textabout {
+        width: 100%;
+    }
+
+    #about img {
+        margin: 0 auto;
+        width: 150px;
+    }
+
+    #footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+    }
+}
