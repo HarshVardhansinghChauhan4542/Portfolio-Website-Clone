@@ -27,8 +27,8 @@ This project uses a mobile-first approach with media queries to adjust font size
 1. Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/cynthia-ugwu-clone.git
-cd cynthia-ugwu-clone
+https://github.com/HarshVardhansinghChauhan4542/Portfolio-Website-Clone.git
+cd Portfolio-Website-Clone.git
 ```
 
 2. Open index.html in your browser:
